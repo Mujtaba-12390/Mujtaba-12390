@@ -1,0 +1,159 @@
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+body
+{
+    background-image: url(ball.jpg);
+    background-size: 100%;
+   font-family:"Oswald"; font-size: 22px;
+}
+.menu-bar
+{
+    background: hsl(66, 92%, 68%);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(243, 124, 124);
+}
+.menu-bar ul li 
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color:rgb(243, 124, 124) ;
+}
+.active , .menu-bar ul li :hover
+{
+background: hsl(56, 90%, 88%);
+border-radius: 2px;
+}
+.menu-bar.fa
+ {
+    margin-right: 8px;
+ }
+ .sub-menu-1
+ {
+     display: none;
+ }
+ .menu-bar ul li:hover .sub-menu-1
+ {
+     display: block;
+     position: absolute;
+     background: hsl(66, 92%, 68%);
+     margin-top: 15px;
+     margin-left: -15px;
+ }
+ .menu-bar ul li:hover .sub-menu-1 ul
+ {
+      display: block;
+      margin: 10px;
+ }
+ .menu-bar ul li:hover .sub-menu-1 ul li
+ {
+     width: 150px;
+     padding: 10px;
+     border-bottom: 1px dotted red;
+     background: transparent;
+     border-radius: 0;
+     text-align: left;
+ }
+ .menu-bar ul li:hover .sub-menu-1 ul li:last-child
+ {
+   border-bottom:none;
+ }
+ .menu-bar ul li:hover .sub-menu-1 ul li a:hover
+ {
+     color: seagreen;
+ }
+ .fa-angle-right
+ {
+     float: right;
+     font-weight: bold;
+ }
+ .sub-menu-2
+ {
+     display: none;
+
+ }
+ .hover-me:hover .sub-menu-2
+ {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background:  hsl(66, 92%, 68%) ;
+ }
+ /*This Line Is For Image zon text */
+ .centered {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-family: Arial;
+    color: brown;
+  }
+  /*The home handing css*/
+  .Home
+  {
+      position: absolute;
+      top: 28%;
+      left: 14%;
+      font-weight: bold;
+      font-size: 50px;
+      color: brown;
+      
+  }
+  /*the button of getting started css is starting from below*/
+  .btn1
+  {
+      position: absolute;
+      bottom: 28%;
+      left: 10%;
+      background-color: #B6D470; 
+      color: black; 
+      border: 2px solid brown;
+      padding: 14px 40px;
+      font-family: "Arial" ;
+      border-radius: 12px;
+  }
+  .btn1:hover {
+    background-color: wheat;
+    color: white;
+  }
+/*the button of getting starting of css is end above*/
+ 
+/*this line is for web pic css*/
+ .mywebname
+{
+    color: red ;
+    text-align: left center;
+    font-family: 'Goblin One';font-size: 30px;
+    list-style: none;
+     display:inline-flex;
+}
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
